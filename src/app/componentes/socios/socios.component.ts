@@ -16,6 +16,9 @@ addEventListener("DOMContentLoaded", function (){
 
     // @ts-ignore
     document.getElementById("resCodigo").textContent = document.getElementById("codigo").value
+
+    // @ts-ignore
+    codigos.push(document.getElementById("codigo").value)
   })
 })
 
