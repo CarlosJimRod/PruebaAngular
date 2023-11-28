@@ -2,9 +2,9 @@
 <html>
 <body>
 <h1>Libros</h1>
-Ingrese el titulo<input type="text" id="titulo" autofocus><br>
-Nombre Completo:<a id="resTitulo"> </a>
+Ingrese el titulo<input type="text" id="titulo" [(ngModel)]="titulo" autofocus><br>
+Nombre Completo: {{titulos[titulos.length-1]}}
 <br><br><br>
-<button id="anadir1">Enviar</button>
+<app-boton [label]="tituloBoton" (click)="click()"></app-boton>
 </body>
 </html>

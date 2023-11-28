@@ -6,20 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./socios.component.css']
 })
 export class SociosComponent {
-
+  titulo="Anadir Socio";
+  socios:string[] = [];
+  socio="";
+  click(){
+    this.socios.push(this.socio)
+  }
 }
-let codigos=new Array()
-
-addEventListener("DOMContentLoaded", function (){
-  // @ts-ignore
-  document.getElementById("anadir2").addEventListener("click", function () {
-
-    // @ts-ignore
-    document.getElementById("resCodigo").textContent = document.getElementById("codigo").value
-
-    // @ts-ignore
-    codigos.push(document.getElementById("codigo").value)
-  })
-})
-
-

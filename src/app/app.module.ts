@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { EscritoresComponent } from './componentes/escritores/escritores.component';
 import { LibrosComponent } from './componentes/libros/libros.component';
 import { SociosComponent } from './componentes/socios/socios.component';
-import { BotonComponent } from './componenetes/boton/boton.component';
+import { BotonComponent } from './componentes/boton/boton.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BotonComponent } from './componenetes/boton/boton.component';
     BotonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

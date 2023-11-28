@@ -2,9 +2,9 @@
 <html>
 <body>
 <h1>Socios</h1>
-Ingrese código<input type="text" id="codigo" autofocus><br>
-Código: <a id="resCodigo"></a>
+Ingrese código<input type="text" id="codigo" [(ngModel)]="socio" autofocus><br>
+Código: {{socios[socios.length-1]}}
 <br><br><br>
-<button id="anadir2">Enviar</button>
+<app-boton [label]="titulo" (click)="click()"></app-boton>
 </body>
 </html>

@@ -6,18 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./libros.component.css']
 })
 export class LibrosComponent {
-
+  tituloBoton="Anadir libro";
+  titulos: string[] = [];
+  titulo = "Titanic";
+  click(){
+    this.titulos.push(this.titulo)
+  }
 }
-let titulos=new Array()
-
-addEventListener("DOMContentLoaded", function (){
-  // @ts-ignore
-  document.getElementById("anadir1").addEventListener("click", function () {
-
-    // @ts-ignore
-    document.getElementById("resTitulo").textContent = document.getElementById("titulo").value
-
-    // @ts-ignore
-    titulos.push(document.getElementById("titulo").value)
-  })
-})
