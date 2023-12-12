@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class LibrosComponent {
   tituloBoton="Anadir libro";
   titulos: string[] = [];
-  titulo = "Titanic";
+  titulo = "";
   click(){
     this.titulos.push(this.titulo)
   }
